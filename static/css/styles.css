@@ -1,0 +1,184 @@
+/********** GENERAL STUFF **********/
+
+body {
+    background-color: #F9F9F9;
+}
+
+.main-content {
+    padding: 3.5% 15%;
+}
+
+.content-section {
+    padding: 3.5% 0;
+}
+
+/********** HEADER **********/
+
+header {
+    background-color: #EE1E26;
+    padding: 1.4% 15%;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.red-box {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    box-shadow: 0.156rem 0.156rem black;
+    display: inline-block;
+    margin-right: 2%;
+    padding: 0.5% 0;
+    text-align: center;
+    width: 1.75rem;
+}
+
+/********** FORM SECTION **********/
+
+.advanced-settings {
+    display: none;
+}
+
+.form-check, .form-select {
+    margin-bottom: 1rem;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #EE1E26;
+    border-color: #EE1E26;
+}
+
+.no-matches-text {
+    padding-left: 1rem;
+}
+
+/********** PROGRESS BAR **********/
+
+.progress {
+    display: none;
+}
+
+.progress-bar {
+    animation: animate-progress-bar;
+    animation-fill-mode: forwards;
+}
+
+/********** RESULT SECTION **********/
+
+.result-heading {
+    margin: 0;
+}
+
+.result-action-btn {
+    color: #212529;
+    font-size: 1.75rem;
+    transition: .15s ease-in-out;
+}
+
+.result-action-btn:hover {
+    color: #EE1E26;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #676767;
+    --bs-tooltip-padding-x: 1rem;
+    --bs-tooltip-padding-y: 0.5rem;
+}
+
+.list-group {
+    margin-top: 0.5rem;
+    max-height: 75vh;
+}
+
+.result-text {
+    display: none;
+}
+
+/********** FAQ SECTION **********/
+
+ul, ol {
+    margin-top: 1rem;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+/********** STATS SECTION **********/
+
+.stats {
+    background-color: white;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.stats-data {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.stats-text {
+    margin: 0;
+    padding-top: 5%;
+}
+
+/********** FOOTER **********/
+
+#footer {
+    background-color: #676767;
+    color: white;
+    padding: 4% 0;
+    text-align: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    padding: 2% 1.25%;
+}
+
+/********** RESPONSIVENESS **********/
+
+@media (max-width: 991px) {
+    header {
+        padding: 1.4% 10%;
+    }
+    .main-content {
+        padding: 3.5% 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 1.4% 5%;
+    }
+    .main-content {
+        padding: 3.5% 5%;
+    }
+    .stats-data, .stats-text {
+        padding: 0;
+    }
+    .stats-mid {
+        padding: 7.5% 0;
+    }
+}
+
+/********** ANIMATIONS **********/
+
+@keyframes animate-progress-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

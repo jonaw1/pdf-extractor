@@ -10,7 +10,7 @@ function showProgressBar() {
     document.querySelector(".progress").style.display = "flex";
     // Animation duration of progress bar (0 to 100%) is set to the filesize divided by 2,000 in ms
     document.querySelector(".progress-bar").style.animationDuration =
-        document.getElementById('formFile').files[0].size / 2000 + "ms";
+        document.getElementById('formFile').files[0].size / 357 + "ms";
 }
 
 function copyToClipboard() {

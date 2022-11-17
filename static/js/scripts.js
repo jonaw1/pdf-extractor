@@ -22,6 +22,6 @@ function copyToClipboard() {
 }
 
 function downloadFile(elem) {
-    const text = document.getElementById("result-text").innerHTML;
+    const text = document.querySelector(".result-text").innerHTML;
     elem.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
 }

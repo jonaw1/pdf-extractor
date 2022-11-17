@@ -2,6 +2,19 @@ import datetime
 import json
 
 
+def create_stats_file() -> None:
+    data = {
+        "filesExtracted": 0,
+        "stringsExtracted": 0,
+        "lastTimeUsed": "Never"
+    }
+
+    json_object = json.dumps(obj=data, indent=4)
+
+    with open(file="stats.json", mode="w+") as f:
+        f.write(json_object)
+
+
 def update_stats(num_of_strings: int) -> None:
     # Read current stats
     with open(file="stats.json", mode="r") as f:

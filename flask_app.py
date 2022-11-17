@@ -63,6 +63,8 @@ def home():
         os.remove(path=file_path)
 
     # Get JSON stats
+    if not os.path.isfile("stats.json"):
+        stats.create_stats_file()
     data = stats.read_stats()
 
     return render_template(template_name_or_list="index.html", year=year, result=result,
